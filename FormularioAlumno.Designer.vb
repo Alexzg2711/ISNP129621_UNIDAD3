@@ -23,6 +23,14 @@ Partial Class FrmActividad
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DgbDatos = New System.Windows.Forms.DataGridView()
+        Me.CODIGO = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NOMBRE = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.APELLIDO = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GENERO = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DIRECCION = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DUI = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EDAD = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CORREO = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TxtCodigo = New System.Windows.Forms.TextBox()
         Me.LblTitulo = New System.Windows.Forms.Label()
         Me.LblCodigo = New System.Windows.Forms.Label()
@@ -45,14 +53,6 @@ Partial Class FrmActividad
         Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.LblNombre = New System.Windows.Forms.Label()
         Me.LblDatosAlumno = New System.Windows.Forms.Label()
-        Me.CODIGO = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NOMBRE = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.APELLIDO = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GENERO = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DIRECCION = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DUI = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EDAD = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CORREO = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DgbDatos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GbxIngreso.SuspendLayout()
         Me.GbxDatos.SuspendLayout()
@@ -66,6 +66,46 @@ Partial Class FrmActividad
         Me.DgbDatos.Name = "DgbDatos"
         Me.DgbDatos.Size = New System.Drawing.Size(843, 118)
         Me.DgbDatos.TabIndex = 0
+        '
+        'CODIGO
+        '
+        Me.CODIGO.HeaderText = "CODIGO"
+        Me.CODIGO.Name = "CODIGO"
+        '
+        'NOMBRE
+        '
+        Me.NOMBRE.HeaderText = "NOMBRE"
+        Me.NOMBRE.Name = "NOMBRE"
+        '
+        'APELLIDO
+        '
+        Me.APELLIDO.HeaderText = "APELLIDO"
+        Me.APELLIDO.Name = "APELLIDO"
+        '
+        'GENERO
+        '
+        Me.GENERO.HeaderText = "GENERO"
+        Me.GENERO.Name = "GENERO"
+        '
+        'DIRECCION
+        '
+        Me.DIRECCION.HeaderText = "DIRECCION"
+        Me.DIRECCION.Name = "DIRECCION"
+        '
+        'DUI
+        '
+        Me.DUI.HeaderText = "DUI"
+        Me.DUI.Name = "DUI"
+        '
+        'EDAD
+        '
+        Me.EDAD.HeaderText = "EDAD"
+        Me.EDAD.Name = "EDAD"
+        '
+        'CORREO
+        '
+        Me.CORREO.HeaderText = "CORREO ELECTRONICO"
+        Me.CORREO.Name = "CORREO"
         '
         'TxtCodigo
         '
@@ -273,46 +313,6 @@ Partial Class FrmActividad
         Me.LblDatosAlumno.TabIndex = 4
         Me.LblDatosAlumno.Text = "Datos del Alumno:"
         '
-        'CODIGO
-        '
-        Me.CODIGO.HeaderText = "CODIGO"
-        Me.CODIGO.Name = "CODIGO"
-        '
-        'NOMBRE
-        '
-        Me.NOMBRE.HeaderText = "NOMBRE"
-        Me.NOMBRE.Name = "NOMBRE"
-        '
-        'APELLIDO
-        '
-        Me.APELLIDO.HeaderText = "APELLIDO"
-        Me.APELLIDO.Name = "APELLIDO"
-        '
-        'GENERO
-        '
-        Me.GENERO.HeaderText = "GENERO"
-        Me.GENERO.Name = "GENERO"
-        '
-        'DIRECCION
-        '
-        Me.DIRECCION.HeaderText = "DIRECCION"
-        Me.DIRECCION.Name = "DIRECCION"
-        '
-        'DUI
-        '
-        Me.DUI.HeaderText = "DUI"
-        Me.DUI.Name = "DUI"
-        '
-        'EDAD
-        '
-        Me.EDAD.HeaderText = "EDAD"
-        Me.EDAD.Name = "EDAD"
-        '
-        'CORREO
-        '
-        Me.CORREO.HeaderText = "CORREO ELECTRONICO"
-        Me.CORREO.Name = "CORREO"
-        '
         'FrmActividad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
@@ -324,7 +324,7 @@ Partial Class FrmActividad
         Me.Controls.Add(Me.DgbDatos)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "FrmActividad"
-        Me.Text = "TAREA EVALUADA ACTIVIDAD UNIDAD 2"
+        Me.Text = "FORMULARIO DE ALUMNOS"
         CType(Me.DgbDatos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GbxIngreso.ResumeLayout(False)
         Me.GbxIngreso.PerformLayout()

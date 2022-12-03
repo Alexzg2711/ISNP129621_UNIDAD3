@@ -5,7 +5,7 @@
     Private Marca As String
     Private Modelo As String
     Private Ano As String
-    Private Cilindrada As String
+    Private Color As String
     Private Pasajeros As String
     Private Transmision As String
     Private Tipo As String
@@ -42,12 +42,12 @@
         End Set
     End Property
     'Metodo para Cilindrada del Auto
-    Public Property CilindradaAuto() As String
+    Public Property ColorAuto() As String
         Get
-            Return Cilindrada
+            Return Color
         End Get
         Set(value As String)
-            Cilindrada = value
+            Color = value
         End Set
     End Property
     'Metodo para Pasajeros del Auto
@@ -95,7 +95,7 @@
                            ByVal MarcaA As String,
                            ByVal ModeloA As String,
                            ByVal AnoA As String,
-                           ByVal CilindradaA As String,
+                           ByVal ColorA As String,
                            ByVal PasajerosA As String,
                            ByVal TransmisionA As String,
                            ByVal TipoA As String)
@@ -126,11 +126,11 @@
         Else
             Ano = AnoA
         End If
-        If Cilindrada.Length = 0 Then
-            MsgBox("Debe escribir los cilindros del auto")
+        If ColorA.Length = 0 Then
+            MsgBox("Debe escribir el color del auto")
             Exit Sub
         Else
-            Cilindrada = CilindradaA
+            Color = ColorA
         End If
         If PasajerosA.Length = 0 Then
             MsgBox("Debe escribir el numero de pasajeros que tiene el auto")
@@ -158,7 +158,7 @@
         Dim Numero2 As Single
         Dim Guion As String
 
-        Letra = UCase(Left(Tipo, 1))
+        Letra = "P"
         Numero1 = Int(Rnd() * 1000) + 65
         Guion = "-"
         Numero2 = Int(Rnd() * 1000) + 80

@@ -120,7 +120,7 @@
         Else
             Apellido = ApellidoA
         End If
-        If SexoA.Length = 0 Or SexoA.Length > 1 Then
+        If SexoA.Length = 0 Then
             MsgBox("Debe escribir el sexo del alumno, escriba F para femenino o M para masculino")
             Exit Sub
         Else
