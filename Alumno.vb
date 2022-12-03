@@ -77,7 +77,7 @@
             Edad = value
         End Set
     End Property
-    Public ReadOnly Property DatosAceptador() As Boolean
+    Public ReadOnly Property DatosAceptados() As Boolean
         Get
             Return DatosCompletos
         End Get
@@ -109,48 +109,43 @@
             Codigo = CodigoA
         End If
         If NombreA.Length = 0 Then
-            MsgBox("Debe generar el nombre del alumno")
+            MsgBox("Debe escribir el nombre del alumno")
             Exit Sub
         Else
             Nombre = NombreA
         End If
         If ApellidoA.Length = 0 Then
-            MsgBox("Debe generar el apellido del alumno")
+            MsgBox("Debe escribir el apellido del alumno")
             Exit Sub
         Else
             Apellido = ApellidoA
         End If
-        If SexoA.Length = 0 Then
-            MsgBox("Debe generar el sexo del alumno")
+        If SexoA.Length = 0 Or SexoA.Length > 1 Then
+            MsgBox("Debe escribir el sexo del alumno, escriba F para femenino o M para masculino")
             Exit Sub
         Else
             Sexo = SexoA
-            If SexoA = "F" Or "M" Then
-            Else
-                MsgBox("Debe escribir F para femenino o M para masculino")
-                Exit Sub
-            End If
         End If
         If DireccionA.Length = 0 Then
-            MsgBox("Debe generar la direccion del alumno")
+            MsgBox("Debe escribir la direccion del alumno")
             Exit Sub
         Else
             Direccion = DireccionA
         End If
-        If DuiA.Length = 0 Then
-            MsgBox("Debe generar el Dui del alumno")
+        If DuiA.Length = 0 Or DuiA.Length < 10 Then
+            MsgBox("Debe escribir el Dui del alumno, incluyendo el guion")
             Exit Sub
         Else
             Dui = DuiA
         End If
         If EdadA.Length = 0 Then
-            MsgBox("Debe generar la edad del alumno")
+            MsgBox("Debe escribir la edad del alumno")
             Exit Sub
         Else
             Edad = EdadA
         End If
         If CorreoA.Length = 0 Then
-            MsgBox("Debe generar el correo del alumno")
+            MsgBox("Debe escribir el correo del alumno")
             Exit Sub
         Else
             Correo = CorreoA
