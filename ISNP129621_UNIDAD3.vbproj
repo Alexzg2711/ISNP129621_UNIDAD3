@@ -73,11 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Auto.vb" />
+    <Compile Include="FormularioAlumno.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FormularioAlumno.Designer.vb">
+      <DependentUpon>FormularioAlumno.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioAuto.Designer.vb">
+      <DependentUpon>FormularioAuto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioAuto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -99,8 +106,8 @@
     <Compile Include="Persona.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="FormularioAlumno.resx">
+      <DependentUpon>FormularioAlumno.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
